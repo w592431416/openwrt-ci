@@ -16,8 +16,7 @@ env:
   FIRMWARE_RELEASE: true
   FIRMWARE_TAG: IPQ60XX-ALL
   TZ: Asia/Shanghai
-permissions:
-  contents: write
+  
 jobs:
   Build:
     runs-on: ubuntu-22.04
