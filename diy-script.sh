@@ -43,11 +43,6 @@ git clone --depth=1 https://github.com/NONGFAH/luci-app-athena-led package/luci-
 chmod +x package/luci-app-athena-led/root/etc/init.d/athena_led package/luci-app-athena-led/root/usr/sbin/athena-led
 # git_sparse_clone master https://github.com/syb999/openwrt-19.07.1 package/network/services/msd_lite
 
-# 添加 dockerman 及中文语言包
-# git clone --depth=1 https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
-# git clone --depth=1 https://github.com/lisaac/luci-lib-docker package/luci-lib-docker
-# git clone --depth=1 https://github.com/lisaac/luci-i18n-dockerman-zh-cn package/luci-i18n-dockerman-zh-cn
-
 # 科学上网插件
 git clone --depth=1 -b main https://github.com/fw876/helloworld package/luci-app-ssr-plus
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall
