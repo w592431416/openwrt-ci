@@ -44,9 +44,9 @@ chmod +x package/luci-app-athena-led/root/etc/init.d/athena_led package/luci-app
 # git_sparse_clone master https://github.com/syb999/openwrt-19.07.1 package/network/services/msd_lite
 
 # 添加 dockerman 及中文语言包
-git clone --depth=1 https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
-git clone --depth=1 https://github.com/lisaac/luci-lib-docker package/luci-lib-docker
-git clone --depth=1 https://github.com/lisaac/luci-i18n-dockerman-zh-cn package/luci-i18n-dockerman-zh-cn
+# git clone --depth=1 https://github.com/lisaac/luci-app-dockerman package/luci-app-dockerman
+# git clone --depth=1 https://github.com/lisaac/luci-lib-docker package/luci-lib-docker
+# git clone --depth=1 https://github.com/lisaac/luci-i18n-dockerman-zh-cn package/luci-i18n-dockerman-zh-cn
 
 # 科学上网插件
 git clone --depth=1 -b main https://github.com/fw876/helloworld package/luci-app-ssr-plus
@@ -131,6 +131,4 @@ find package/luci-theme-*/* -type f -name '*luci-theme-*' -print -exec sed -i '/
 # sed -i 's/services/vpn/g' feeds/luci/applications/luci-app-v2ray-server/luasrc/view/v2ray_server/*.htm
 
 ./scripts/feeds update -a
-./scripts/feeds install python3-distutils
-./scripts/feeds install python3-pysocks
 ./scripts/feeds install -a
