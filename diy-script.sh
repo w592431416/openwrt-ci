@@ -131,4 +131,6 @@ find package/luci-theme-*/* -type f -name '*luci-theme-*' -print -exec sed -i '/
 # sed -i 's/services/vpn/g' feeds/luci/applications/luci-app-v2ray-server/luasrc/view/v2ray_server/*.htm
 
 ./scripts/feeds update -a
+./scripts/feeds install python3-distutils
+./scripts/feeds install python3-pysocks
 ./scripts/feeds install -a
